@@ -1,0 +1,12 @@
+{
+  "name": "hotel-booking-app",
+  "displayName": "hotel-booking-app",
+  "expo": {
+    "name": "hotel-booking-app",
+    "slug": "hotel-booking-app",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}

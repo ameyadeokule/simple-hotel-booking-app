@@ -1,23 +1,20 @@
-import { StatusBar } from 'expo-status-bar'
 import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
-import Entype from 'react-native-vector-icons/Entypo'
+import { StatusBar } from 'expo-status-bar'
+import { SafeAreaView } from 'react-native'
+import HomeScreen from './src/screens/Home'
+import Post from './src/components/Post'
+import feed from './src/consts/hotels'
+
+const psot1 = feed[1]
 
 export default function App() {
 	return (
-		<View style={styles.container}>
-			<Text>Open up App.js to start working on your app! </Text>
-			<Entype name={'analytics'} size={24} />
-			<StatusBar style='auto' />
-		</View>
+		<>
+			<StatusBar barStyle='dark-content' />
+			<SafeAreaView>
+				{/* <HomeScreen /> */}
+				<Post post={psot1} />
+			</SafeAreaView>
+		</>
 	)
 }
-
-const styles = StyleSheet.create({
-	container: {
-		flex: 1,
-		backgroundColor: '#fff',
-		alignItems: 'center',
-		justifyContent: 'center',
-	},
-})

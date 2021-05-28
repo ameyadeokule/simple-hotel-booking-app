@@ -3,7 +3,8 @@ import { StatusBar } from 'expo-status-bar'
 import { SafeAreaView } from 'react-native'
 import HomeScreen from './src/screens/Home'
 import Post from './src/components/Post'
-import feed from './src/consts/hotels'
+import SearchResultScreen from './src/screens/SearchResult'
+import DestinationSearchScreen from './src/screens/DestintionSearch'
 
 const psot1 = feed[1]
 
@@ -13,7 +14,9 @@ export default function App() {
 			<StatusBar barStyle='dark-content' />
 			<SafeAreaView>
 				{/* <HomeScreen /> */}
-				<Post post={psot1} />
+				{/* <Post post={psot1} /> */}
+				{/* <SearchResultScreen /> */}
+				<DestinationSearchScreen />
 			</SafeAreaView>
 		</>
 	)
